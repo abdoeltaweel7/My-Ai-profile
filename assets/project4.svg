@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1420"/>
+      <stop offset="100%" style="stop-color:#1a1f35"/>
+    </linearGradient>
+    <linearGradient id="purple4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="gradient-insta" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f09433"/>
+      <stop offset="25%" style="stop-color:#e6683c"/>
+      <stop offset="50%" style="stop-color:#dc2743"/>
+      <stop offset="75%" style="stop-color:#cc2366"/>
+      <stop offset="100%" style="stop-color:#bc1888"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg4)"/>
+  
+  <!-- Title -->
+  <rect x="270" y="25" width="260" height="40" rx="8" fill="url(#purple4)"/>
+  <text x="400" y="50" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">Social Media Content Pipeline</text>
+  
+  <!-- Pipeline Flow -->
+  <!-- AI Content Generator -->
+  <g transform="translate(50, 100)">
+    <rect x="0" y="0" width="180" height="120" rx="12" fill="#1e2540" stroke="#a855f7" stroke-width="2"/>
+    <circle cx="90" cy="35" r="20" fill="url(#purple4)"/>
+    <text x="90" y="40" text-anchor="middle" fill="white" font-size="16">🧠</text>
+    <text x="90" y="70" text-anchor="middle" fill="#a855f7" font-size="12" font-weight="bold" font-family="Arial">AI Content Gen</text>
+    <text x="90" y="90" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="Arial">Groq LLM</text>
+    <text x="90" y="105" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="Arial">Trend Analysis</text>
+  </g>
+  
+  <!-- Arrow to Scheduler -->
+  <path d="M235 160 L290 160" stroke="#a855f7" stroke-width="2"/>
+  <polygon points="290,155 300,160 290,165" fill="#a855f7"/>
+  
+  <!-- Content Scheduler -->
+  <g transform="translate(310, 100)">
+    <rect x="0" y="0" width="180" height="120" rx="12" fill="#1e2540" stroke="#06b6d4" stroke-width="2"/>
+    <circle cx="90" cy="35" r="20" fill="#06b6d4"/>
+    <text x="90" y="40" text-anchor="middle" fill="white" font-size="16">📅</text>
+    <text x="90" y="70" text-anchor="middle" fill="#06b6d4" font-size="12" font-weight="bold" font-family="Arial">Smart Scheduler</text>
+    <text x="90" y="90" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="Arial">Optimal Times</text>
+    <text x="90" y="105" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="Arial">Queue Management</text>
+  </g>
+  
+  <!-- Arrow to Multi-platform -->
+  <path d="M495 160 L550 160" stroke="#06b6d4" stroke-width="2"/>
+  <polygon points="550,155 560,160 550,165" fill="#06b6d4"/>
+  
+  <!-- Multi-Platform Poster -->
+  <g transform="translate(570, 100)">
+    <rect x="0" y="0" width="180" height="120" rx="12" fill="#1e2540" stroke="#10b981" stroke-width="2"/>
+    <circle cx="90" cy="35" r="20" fill="#10b981"/>
+    <text x="90" y="40" text-anchor="middle" fill="white" font-size="16">🚀</text>
+    <text x="90" y="70" text-anchor="middle" fill="#10b981" font-size="12" font-weight="bold" font-family="Arial">Auto-Publish</text>
+    <text x="90" y="90" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="Arial">Multi-Platform</text>
+    <text x="90" y="105" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="Arial">Format Optimized</text>
+  </g>
+  
+  <!-- Social Platform Icons -->
+  <g transform="translate(100, 280)">
+    <!-- Instagram -->
+    <rect x="0" y="0" width="100" height="80" rx="10" fill="#1e2540" stroke="url(#gradient-insta)" stroke-width="2"/>
+    <text x="50" y="35" text-anchor="middle" font-size="24">📸</text>
+    <text x="50" y="60" text-anchor="middle" fill="#e2e8f0" font-size="11" font-family="Arial">Instagram</text>
+  </g>
+  
+  <g transform="translate(230, 280)">
+    <!-- Twitter/X -->
+    <rect x="0" y="0" width="100" height="80" rx="10" fill="#1e2540" stroke="#1da1f2" stroke-width="2"/>
+    <text x="50" y="35" text-anchor="middle" font-size="24">𝕏</text>
+    <text x="50" y="60" text-anchor="middle" fill="#e2e8f0" font-size="11" font-family="Arial">X / Twitter</text>
+  </g>
+  
+  <g transform="translate(360, 280)">
+    <!-- LinkedIn -->
+    <rect x="0" y="0" width="100" height="80" rx="10" fill="#1e2540" stroke="#0077b5" stroke-width="2"/>
+    <text x="50" y="35" text-anchor="middle" font-size="24">in</text>
+    <text x="50" y="60" text-anchor="middle" fill="#e2e8f0" font-size="11" font-family="Arial">LinkedIn</text>
+  </g>
+  
+  <g transform="translate(490, 280)">
+    <!-- TikTok -->
+    <rect x="0" y="0" width="100" height="80" rx="10" fill="#1e2540" stroke="#ff0050" stroke-width="2"/>
+    <text x="50" y="35" text-anchor="middle" font-size="24">🎵</text>
+    <text x="50" y="60" text-anchor="middle" fill="#e2e8f0" font-size="11" font-family="Arial">TikTok</text>
+  </g>
+  
+  <g transform="translate(620, 280)">
+    <!-- Facebook -->
+    <rect x="0" y="0" width="100" height="80" rx="10" fill="#1e2540" stroke="#1877f2" stroke-width="2"/>
+    <text x="50" y="35" text-anchor="middle" font-size="24">f</text>
+    <text x="50" y="60" text-anchor="middle" fill="#e2e8f0" font-size="11" font-family="Arial">Facebook</text>
+  </g>
+  
+  <!-- Connection lines from publisher to platforms -->
+  <path d="M660 220 L660 250 L150 250 L150 280" stroke="#a855f7" stroke-width="1" opacity="0.5" stroke-dasharray="4,4"/>
+  <path d="M660 220 L660 250 L280 250 L280 280" stroke="#a855f7" stroke-width="1" opacity="0.5" stroke-dasharray="4,4"/>
+  <path d="M660 220 L660 250 L410 250 L410 280" stroke="#a855f7" stroke-width="1" opacity="0.5" stroke-dasharray="4,4"/>
+  <path d="M660 220 L660 250 L540 250 L540 280" stroke="#a855f7" stroke-width="1" opacity="0.5" stroke-dasharray="4,4"/>
+  <path d="M660 220 L660 250 L670 250 L670 280" stroke="#a855f7" stroke-width="1" opacity="0.5" stroke-dasharray="4,4"/>
+  
+  <!-- Stats Section -->
+  <rect x="50" y="390" width="700" height="85" rx="12" fill="#1e2540" stroke="#a855f7" stroke-width="1"/>
+  
+  <g transform="translate(100, 410)">
+    <text x="0" y="20" fill="#a855f7" font-size="28" font-weight="bold" font-family="Arial">200%</text>
+    <text x="0" y="45" fill="#94a3b8" font-size="10" font-family="Arial">Content Output ↑</text>
+  </g>
+  
+  <g transform="translate(280, 410)">
+    <text x="0" y="20" fill="#06b6d4" font-size="28" font-weight="bold" font-family="Arial">60%</text>
+    <text x="0" y="45" fill="#94a3b8" font-size="10" font-family="Arial">Time Saved</text>
+  </g>
+  
+  <g transform="translate(430, 410)">
+    <text x="0" y="20" fill="#10b981" font-size="28" font-weight="bold" font-family="Arial">+45%</text>
+    <text x="0" y="45" fill="#94a3b8" font-size="10" font-family="Arial">Engagement Rate</text>
+  </g>
+  
+  <g transform="translate(600, 410)">
+    <text x="0" y="20" fill="#f59e0b" font-size="28" font-weight="bold" font-family="Arial">20+</text>
+    <text x="0" y="45" fill="#94a3b8" font-size="10" font-family="Arial">Client Accounts</text>
+  </g>
+</svg>

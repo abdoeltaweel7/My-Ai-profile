@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1420"/>
+      <stop offset="100%" style="stop-color:#1a1f35"/>
+    </linearGradient>
+    <linearGradient id="purple1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <filter id="glow1">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg1)"/>
+  
+  <!-- Grid Pattern -->
+  <g opacity="0.1" stroke="#a855f7" stroke-width="0.5">
+    <line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="450" x2="800" y2="450"/>
+    <line x1="100" y1="0" x2="100" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="500" y1="0" x2="500" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="700" y1="0" x2="700" y2="500"/>
+  </g>
+  
+  <!-- Workflow Nodes -->
+  <!-- Node 1: Trigger -->
+  <g transform="translate(80, 200)">
+    <rect x="0" y="0" width="120" height="70" rx="10" fill="#1e2540" stroke="#a855f7" stroke-width="2" filter="url(#glow1)"/>
+    <circle cx="60" cy="25" r="12" fill="url(#purple1)"/>
+    <text x="60" y="30" text-anchor="middle" fill="white" font-size="12">⚡</text>
+    <text x="60" y="55" text-anchor="middle" fill="#e2e8f0" font-size="11" font-family="Arial">Webhook</text>
+  </g>
+  
+  <!-- Connection Line 1 -->
+  <path d="M200 235 L280 235" stroke="#a855f7" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+  <polygon points="280,230 290,235 280,240" fill="#a855f7"/>
+  
+  <!-- Node 2: AI Processing -->
+  <g transform="translate(290, 200)">
+    <rect x="0" y="0" width="120" height="70" rx="10" fill="#1e2540" stroke="#06b6d4" stroke-width="2"/>
+    <circle cx="60" cy="25" r="12" fill="#06b6d4"/>
+    <text x="60" y="30" text-anchor="middle" fill="white" font-size="12">🧠</text>
+    <text x="60" y="55" text-anchor="middle" fill="#e2e8f0" font-size="11" font-family="Arial">AI Enrich</text>
+  </g>
+  
+  <!-- Connection Line 2 -->
+  <path d="M410 235 L490 235" stroke="#06b6d4" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+  <polygon points="490,230 500,235 490,240" fill="#06b6d4"/>
+  
+  <!-- Node 3: Filter -->
+  <g transform="translate(500, 200)">
+    <rect x="0" y="0" width="120" height="70" rx="10" fill="#1e2540" stroke="#14b8a6" stroke-width="2"/>
+    <circle cx="60" cy="25" r="12" fill="#14b8a6"/>
+    <text x="60" y="30" text-anchor="middle" fill="white" font-size="12">⚙</text>
+    <text x="60" y="55" text-anchor="middle" fill="#e2e8f0" font-size="11" font-family="Arial">Score Leads</text>
+  </g>
+  
+  <!-- Branch Lines -->
+  <path d="M620 235 L680 235 L680 150" stroke="#a855f7" stroke-width="2" opacity="0.7"/>
+  <path d="M620 235 L680 235 L680 320" stroke="#a855f7" stroke-width="2" opacity="0.7"/>
+  
+  <!-- Node 4: High Score -->
+  <g transform="translate(650, 100)">
+    <rect x="0" y="0" width="100" height="50" rx="8" fill="#1e2540" stroke="#10b981" stroke-width="2"/>
+    <text x="50" y="20" text-anchor="middle" fill="#10b981" font-size="10" font-family="Arial">High Score</text>
+    <text x="50" y="38" text-anchor="middle" fill="#e2e8f0" font-size="11" font-family="Arial">→ CRM</text>
+  </g>
+  
+  <!-- Node 5: Low Score -->
+  <g transform="translate(650, 320)">
+    <rect x="0" y="0" width="100" height="50" rx="8" fill="#1e2540" stroke="#f59e0b" stroke-width="2"/>
+    <text x="50" y="20" text-anchor="middle" fill="#f59e0b" font-size="10" font-family="Arial">Low Score</text>
+    <text x="50" y="38" text-anchor="middle" fill="#e2e8f0" font-size="11" font-family="Arial">→ Nurture</text>
+  </g>
+  
+  <!-- Data Flow Particles -->
+  <circle cx="250" cy="235" r="4" fill="#a855f7" opacity="0.8">
+    <animate attributeName="cx" values="200;280" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="460" cy="235" r="4" fill="#06b6d4" opacity="0.8">
+    <animate attributeName="cx" values="410;490" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  
+  <!-- Title Badge -->
+  <rect x="50" y="30" width="250" height="40" rx="8" fill="url(#purple1)" opacity="0.9"/>
+  <text x="175" y="55" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">Lead Generation Pipeline</text>
+  
+  <!-- Stats -->
+  <g transform="translate(550, 420)">
+    <rect x="0" y="0" width="200" height="60" rx="8" fill="#1e2540" stroke="#a855f7" stroke-width="1" opacity="0.8"/>
+    <text x="100" y="25" text-anchor="middle" fill="#a855f7" font-size="20" font-weight="bold" font-family="Arial">500+</text>
+    <text x="100" y="45" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="Arial">Leads/Day Automated</text>
+  </g>
+</svg>

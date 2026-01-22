@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1420"/>
+      <stop offset="100%" style="stop-color:#1a1f35"/>
+    </linearGradient>
+    <linearGradient id="purple6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg6)"/>
+  
+  <!-- Title -->
+  <rect x="300" y="25" width="200" height="40" rx="8" fill="url(#purple6)"/>
+  <text x="400" y="50" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">AI Meeting Assistant</text>
+  
+  <!-- Meeting Recording Input -->
+  <g transform="translate(50, 100)">
+    <rect x="0" y="0" width="200" height="140" rx="12" fill="#1e2540" stroke="#ef4444" stroke-width="2"/>
+    
+    <!-- Video player mockup -->
+    <rect x="15" y="15" width="170" height="80" rx="6" fill="#0f1420"/>
+    <circle cx="100" cy="55" r="20" fill="#ef4444" opacity="0.3"/>
+    <polygon points="93,45 93,65 113,55" fill="#ef4444"/>
+    
+    <text x="100" y="115" text-anchor="middle" fill="#ef4444" font-size="11" font-weight="bold" font-family="Arial">🎥 Meeting Recording</text>
+    <text x="100" y="130" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="Arial">Zoom / Teams / Meet</text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M260 170 L310 170" stroke="#a855f7" stroke-width="2"/>
+  <polygon points="310,165 320,170 310,175" fill="#a855f7"/>
+  
+  <!-- AI Processing Center -->
+  <g transform="translate(330, 90)">
+    <rect x="0" y="0" width="160" height="160" rx="12" fill="#1e2540" stroke="#a855f7" stroke-width="2"/>
+    
+    <!-- Brain animation representation -->
+    <circle cx="80" cy="50" r="30" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.5"/>
+    <circle cx="80" cy="50" r="20" fill="url(#purple6)"/>
+    <text x="80" y="55" text-anchor="middle" fill="white" font-size="18">🧠</text>
+    
+    <text x="80" y="95" text-anchor="middle" fill="#a855f7" font-size="12" font-weight="bold" font-family="Arial">Groq AI</text>
+    <text x="80" y="115" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="Arial">Transcription</text>
+    <text x="80" y="130" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="Arial">Summarization</text>
+    <text x="80" y="145" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="Arial">Action Extraction</text>
+  </g>
+  
+  <!-- Arrow to outputs -->
+  <path d="M500 170 L540 170 L540 100" stroke="#a855f7" stroke-width="2"/>
+  <path d="M500 170 L540 170 L540 170" stroke="#a855f7" stroke-width="2"/>
+  <path d="M500 170 L540 170 L540 240" stroke="#a855f7" stroke-width="2"/>
+  
+  <!-- Output 1: Transcript -->
+  <g transform="translate(560, 70)">
+    <rect x="0" y="0" width="180" height="70" rx="10" fill="#1e2540" stroke="#06b6d4" stroke-width="2"/>
+    <text x="90" y="25" text-anchor="middle" fill="#06b6d4" font-size="11" font-weight="bold" font-family="Arial">📝 Transcript</text>
+    <text x="90" y="45" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="Arial">Full text with speakers</text>
+    <text x="90" y="60" text-anchor="middle" fill="#64748b" font-size="8" font-family="Arial">→ Google Docs</text>
+  </g>
+  
+  <!-- Output 2: Summary -->
+  <g transform="translate(560, 155)">
+    <rect x="0" y="0" width="180" height="70" rx="10" fill="#1e2540" stroke="#10b981" stroke-width="2"/>
+    <text x="90" y="25" text-anchor="middle" fill="#10b981" font-size="11" font-weight="bold" font-family="Arial">📋 Summary</text>
+    <text x="90" y="45" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="Arial">Key points & decisions</text>
+    <text x="90" y="60" text-anchor="middle" fill="#64748b" font-size="8" font-family="Arial">→ Slack / Email</text>
+  </g>
+  
+  <!-- Output 3: Action Items -->
+  <g transform="translate(560, 240)">
+    <rect x="0" y="0" width="180" height="70" rx="10" fill="#1e2540" stroke="#f59e0b" stroke-width="2"/>
+    <text x="90" y="25" text-anchor="middle" fill="#f59e0b" font-size="11" font-weight="bold" font-family="Arial">✅ Action Items</text>
+    <text x="90" y="45" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="Arial">Tasks with assignees</text>
+    <text x="90" y="60" text-anchor="middle" fill="#64748b" font-size="8" font-family="Arial">→ Notion / Asana</text>
+  </g>
+  
+  <!-- Sample Output Preview -->
+  <g transform="translate(50, 270)">
+    <rect x="0" y="0" width="450" height="130" rx="12" fill="#1e2540" stroke="#3d4565" stroke-width="1"/>
+    
+    <text x="20" y="25" fill="#a855f7" font-size="11" font-weight="bold" font-family="Arial">Meeting Summary - Q4 Planning</text>
+    
+    <text x="20" y="50" fill="#10b981" font-size="9" font-weight="bold" font-family="Arial">Key Decisions:</text>
+    <text x="20" y="65" fill="#94a3b8" font-size="9" font-family="Arial">• Launch new feature by Dec 15</text>
+    <text x="20" y="80" fill="#94a3b8" font-size="9" font-family="Arial">• Increase marketing budget by 20%</text>
+    
+    <text x="250" y="50" fill="#f59e0b" font-size="9" font-weight="bold" font-family="Arial">Action Items:</text>
+    <text x="250" y="65" fill="#94a3b8" font-size="9" font-family="Arial">☐ @John: Finalize specs (Dec 1)</text>
+    <text x="250" y="80" fill="#94a3b8" font-size="9" font-family="Arial">☐ @Sarah: Update roadmap</text>
+    <text x="250" y="95" fill="#94a3b8" font-size="9" font-family="Arial">☐ @Mike: Schedule review</text>
+    
+    <text x="20" y="115" fill="#06b6d4" font-size="8" font-family="Arial">⏱ Meeting: 45 min | 📊 4 action items | 👥 6 participants</text>
+  </g>
+  
+  <!-- Stats -->
+  <rect x="50" y="420" width="700" height="60" rx="12" fill="#1e2540" stroke="#a855f7" stroke-width="1"/>
+  
+  <g transform="translate(100, 435)">
+    <text x="0" y="15" fill="#06b6d4" font-size="24" font-weight="bold" font-family="Arial">10+ hrs</text>
+    <text x="0" y="35" fill="#94a3b8" font-size="9" font-family="Arial">Saved per Week</text>
+  </g>
+  
+  <g transform="translate(280, 435)">
+    <text x="0" y="15" fill="#10b981" font-size="24" font-weight="bold" font-family="Arial">100%</text>
+    <text x="0" y="35" fill="#94a3b8" font-size="9" font-family="Arial">Action Items Tracked</text>
+  </g>
+  
+  <g transform="translate(450, 435)">
+    <text x="0" y="15" fill="#a855f7" font-size="24" font-weight="bold" font-family="Arial">5 min</text>
+    <text x="0" y="35" fill="#94a3b8" font-size="9" font-family="Arial">vs 2hr Manual</text>
+  </g>
+  
+  <g transform="translate(620, 435)">
+    <text x="0" y="15" fill="#f59e0b" font-size="24" font-weight="bold" font-family="Arial">Auto</text>
+    <text x="0" y="35" fill="#94a3b8" font-size="9" font-family="Arial">Distribution</text>
+  </g>
+</svg>
