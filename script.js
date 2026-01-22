@@ -331,21 +331,41 @@ function initContactForm() {
         submitBtn.classList.add('loading');
         submitBtn.disabled = true;
         
-        // Simulate form submission (replace with actual API call)
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        // Get form data
+        const formData = new FormData(contactForm);
         
-        submitBtn.classList.remove('loading');
-        submitBtn.classList.add('success');
-        
-        // Show success toast
-        showToast();
-        
-        // Reset form after delay
-        setTimeout(() => {
-            contactForm.reset();
-            submitBtn.classList.remove('success');
+        try {
+            // Send to Formspree
+            const response = await fetch('https://formspree.io/f/xlgjewgz', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                submitBtn.classList.remove('loading');
+                submitBtn.classList.add('success');
+                
+                // Show success toast
+                showToast();
+                
+                // Reset form after delay
+                setTimeout(() => {
+                    contactForm.reset();
+                    submitBtn.classList.remove('success');
+                    submitBtn.disabled = false;
+                }, 3000);
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            submitBtn.classList.remove('loading');
             submitBtn.disabled = false;
-        }, 3000);
+            alert('حدث خطأ في الإرسال. حاول مرة أخرى.');
+        }
     });
     
     toastClose.addEventListener('click', hideToast);
